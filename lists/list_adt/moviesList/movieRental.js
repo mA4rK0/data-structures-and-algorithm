@@ -1,4 +1,5 @@
 const fs = require("fs");
+const readlineSync = require("readline-sync");
 
 class List {
   constructor() {
@@ -116,14 +117,51 @@ function createArr(file) {
   return arr;
 }
 
+class Customer {
+  constructor(name, movie) {
+    this.name = name;
+    this.movie = movie;
+  }
+}
+
 let movies = createArr("movies.txt");
 let movieList = new List();
+let customers = new List();
 for (let i = 0; i < movies.length; i++) {
   movieList.append(movies[i]);
 }
 
 function displayList(list) {
-  for (list.front(); list.currPos() < list.length(); list.next()) {
-    console.log(list.getElement());
+  for (let i = 0; i < list.dataStore.length; i++) {
+    const element = list.dataStore[i];
+    if (element instanceof Customer) {
+      console.log(`${element.name}, ${element.movie}`);
+    } else {
+      console.log(element);
+    }
   }
 }
+
+function checkOut(name, movie, filmList, customerList) {
+  if (movieList.contains(movie)) {
+    let c = new Customer(name, movie);
+    customerList.append(c);
+    filmList.remove(movie);
+  } else {
+    console.log(movie + " is not available.");
+  }
+}
+
+console.log("Available movies: \n");
+displayList(movieList);
+
+let name = readlineSync.question("\nEnter your name: ");
+let movie = readlineSync.question("What movie would you like? ");
+
+checkOut(name, movie, movieList, customers);
+
+console.log("\nCustomer Rentals: \n");
+displayList(customers);
+
+console.log("\nMovies Now Available\n");
+displayList(movieList);

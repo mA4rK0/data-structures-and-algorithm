@@ -116,15 +116,15 @@ class List {
     return false;
   }
 
-  traverse() {
-    for (this.front(); this.currPos() < this.length(); this.next()) {
-      console.log(this.getElement());
+  traverse(list) {
+    for (let i = 0; i < list.dataStore.length; i++) {
+      console.log(list.getElement());
     }
   }
 
-  traverseBackwards() {
-    for (this.end(); this.currPos() >= 0; this.prev()) {
-      console.log(this.getElement());
+  traverseBackwards(list) {
+    for (let i = list.dataStore.length - 1; i >= 0; i--) {
+      console.log(list.getElement());
     }
   }
 }
