@@ -27,3 +27,22 @@ class Stack {
     return this.dataStore.length === 0;
   }
 }
+
+function palindrome(str) {
+  let a = new Stack();
+  for (let i = 0; i < str.length; i++) {
+    a.push(str[i]);
+  }
+  let rword = "";
+  while (a.length() > 0) {
+    rword += a.pop();
+  }
+  if (rword === str) {
+    console.log(str + " is a palindrome.");
+  } else {
+    console.log(str + " is not a palindrome.");
+  }
+}
+
+palindrome("racecar");
+palindrome("hello");

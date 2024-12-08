@@ -118,13 +118,13 @@ class List {
 
   traverse(list) {
     for (let i = 0; i < list.dataStore.length; i++) {
-      console.log(list.getElement());
+      return this.dataStore[i];
     }
   }
 
   traverseBackwards(list) {
     for (let i = list.dataStore.length - 1; i >= 0; i--) {
-      console.log(list.getElement());
+      return this.dataStore[i];
     }
   }
 }

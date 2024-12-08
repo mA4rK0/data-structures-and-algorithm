@@ -95,13 +95,13 @@ class List {
 
   traverse(list) {
     for (let i = 0; i < list.dataStore.length; i++) {
-      console.log(list.getElement());
+      return this.dataStore[i];
     }
   }
 
   traverseBackwards(list) {
     for (let i = list.dataStore.length - 1; i >= 0; i--) {
-      console.log(list.getElement());
+      return this.dataStore[i];
     }
   }
 }
@@ -124,6 +124,8 @@ list.append(new Person("Sue", "female"));
 list.append(new Person("Tim", "male"));
 list.append(new Person("Eve", "female"));
 list.append(new Person("Sam", "male"));
+
+console.log(list);
 
 let maleList = new List();
 function isMale() {
