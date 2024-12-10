@@ -1,12 +1,3 @@
-/*
- *1. push (function) = store the element in the top of the stack
- *2. pop (function) = remove the element from the top of the stack
- *3. peek (function) = return the element from the top of the stack
- *4. clear (function) = remove all the elements from the stack
- *5. length (function) = return the number of elements in the stack
- *6. isEmpty (function) = check if the stack is empty
- */
-
 class Stack {
   constructor() {
     this.dataStore = [];
@@ -36,3 +27,17 @@ class Stack {
     return this.dataStore.length === 0;
   }
 }
+
+function factorial(n) {
+  let s = new Stack();
+  while (n > 1) {
+    s.push(n--);
+  }
+  let product = 1;
+  while (s.length() > 0) {
+    product *= s.pop();
+  }
+  return product;
+}
+
+console.log(factorial(5));
