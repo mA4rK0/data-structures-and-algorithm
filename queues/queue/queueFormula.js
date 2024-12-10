@@ -6,6 +6,7 @@
  *5. toString (function) = display all the elements in the queue
  *6. clear (function) = remove all the elements from the queue
  *7. isEmpty (function) = check if the queue is empty
+ *8. count (function) = return the number of elements in the queue
  */
 
 class Queue {
@@ -43,5 +44,9 @@ class Queue {
 
   isEmpty() {
     return this.dataStore.length === 0 ? true : false;
+  }
+
+  count() {
+    return this.dataStore.length;
   }
 }

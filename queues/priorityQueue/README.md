@@ -1,0 +1,3 @@
+# Priority Queue
+
+A FIFO data structure that serves elements with the highest priority first before elements with lower priority. A priority queue is one where elements are removed from the queue based on a priority constraint. For example, the waiting room at a hospital’s emergency department (ED) operates using a priority queue. When a patient enters the ED, he or she is seen by a triage nurse. This nurse’s job is to assess the severity of the patient’s condition and assign the patient a priorty code. Patients with a high priority code are seen before patients with a lower priority code, and patients that have the same priority code are seen on a first-come, first-served, or first-in, first-out, basis.
