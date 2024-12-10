@@ -10,7 +10,7 @@ class Queue {
   dequeue() {
     let priorityIndex = 0;
     for (let i = 1; i < this.dataStore.length; i++) {
-      if (this.dataStore[i].code < this.dataStore[priorityIndex].code) {
+      if (this.dataStore[i].code > this.dataStore[priorityIndex].code) {
         priorityIndex = i;
       }
     }
