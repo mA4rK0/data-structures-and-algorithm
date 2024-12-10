@@ -6,4 +6,4 @@ This section contains all the codes and formulas used for various types of data 
 2. [Stacks](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/stacks)
    1. [LIFO Stack (Last-in, First-out)](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/stacks/lifoStack)
 3. [Queues](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/queues)
-   1. [Queue Data Structure]()
+   1. [Queue Data Structure](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/queues/queue)
