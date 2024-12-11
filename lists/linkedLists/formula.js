@@ -32,6 +32,21 @@ class LList {
       currNode = currNode.next;
     }
   }
+
+  findPrevious(item) {
+    let currNode = this.head;
+    while (!(currNode.next === null) && currNode.next.element !== item) {
+      currNode = currNode.next;
+    }
+    return currNode;
+  }
+
+  remove(item) {
+    let prevNode = this.findPrevious(item);
+    if (!(prevNode.next === null)) {
+      prevNode.next = prevNode.next.next;
+    }
+  }
 }
 
 //exm:
@@ -44,3 +59,8 @@ cities.insert("Alma", "Beni");
 cities.display();
 
 // head -> Conway -> Russellville -> Beni -> Alma -> null
+
+cities.remove("Russellville");
+cities.display();
+
+// head -> Conway -> Beni -> Alma -> null
