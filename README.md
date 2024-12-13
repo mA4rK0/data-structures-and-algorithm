@@ -10,4 +10,5 @@ This section contains all the codes and formulas used for various types of data 
 3. [Queues](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/queues)
    1. [Queue Data Structure](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/queues/queue)
    2. [Priority Queue](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/queues/priorityQueue)
+4. [Dictionaries](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/dictionaries)
 ### Data Structure -> Sorting Algorithm -> Searching Algorithm
