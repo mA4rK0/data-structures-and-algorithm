@@ -1,3 +1,14 @@
+/*
+ *1. enqueue (function) = Adds an element to the end of the queue
+ *2. dequeue (function) = Removes an element from the front of the queue but with a priority condition
+ *3. front (function) = Returns the element at the front of the queue
+ *4. back (function) = Returns the element at the back of the queue
+ *5. toString (function) = display all the elements in the queue
+ *6. clear (function) = remove all the elements from the queue
+ *7. isEmpty (function) = check if the queue is empty
+ *8. count (function) = return the number of elements in the queue
+ */
+
 class Queue {
   constructor() {
     this.dataStore = [];

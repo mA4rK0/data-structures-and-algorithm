@@ -1,3 +1,19 @@
+/* 
+  Node Class
+ *1. element (property) = Value of node
+ *2. next (property) = Reference to next node
+ */
+
+/*
+  LList Class
+  *1. head (property) = Reference to head node
+  *2. find (function) = returns a node that contains the item specified by the user
+  *3. insert (function) = inserts a new node after the node that contains the item specified by the user
+  *4. display (function) = displays all nodes in the list
+  *5. findPrevious (function) = returns the node before the node that contains the item specified by the user
+  *6. remove (function) = removes the node that contains the item specified by the user
+ */
+
 class Node {
   constructor(element) {
     this.element = element;
