@@ -13,5 +13,5 @@ This section contains all the codes and formulas used for various types of data 
 4. [Dictionaries](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/dictionaries)
 5. [Hash Table](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/hashTable)
    1. [Separate Chaining](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/hashTable/separateChaining)
-   2. [Linear Probing]()
+   2. [Linear Probing](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/hashTable/linearProbing)
 ### Data Structure -> Sorting Algorithm -> Searching Algorithm
