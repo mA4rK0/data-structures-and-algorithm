@@ -20,6 +20,6 @@ This section contains all the codes and formulas used for various types of data 
 
 ## Collection
 
-1. Sets
+1. [Sets](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sets)
 
 ### Data Structure -> Sorting Algorithm -> Searching Algorithm
