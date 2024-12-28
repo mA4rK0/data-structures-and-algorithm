@@ -18,6 +18,7 @@ This section contains all the codes and formulas used for various types of data 
    1. [Separate Chaining](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/hashTable/separateChaining)
    2. [Linear Probing](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/hashTable/linearProbing)
 6. [Binary Search Trees](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/binarySearchTrees)
+7. [Graphs](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph)
 
 ## Collection
 
