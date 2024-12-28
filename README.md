@@ -20,8 +20,14 @@ This section contains all the codes and formulas used for various types of data 
 6. [Binary Search Trees](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/binarySearchTrees)
 7. [Graphs](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph)
 
+## Algorithm
+
+1. Sort Algorithm
+2. Search Algorithm
+   1. Depth First Search
+
 ## Collection
 
 1. [Sets](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sets)
 
-### Data Structure -> Sorting Algorithm -> Searching Algorithm
+### Data Structure -> Sort Algorithm -> Search Algorithm
