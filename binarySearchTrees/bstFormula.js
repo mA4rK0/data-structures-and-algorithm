@@ -11,6 +11,8 @@
   *3. getMin (function) = returns the minimum value of the BST
   *4. getMax (function) = returns the maximum value of the BST
   *5. find (function) = returns a Node object that contains the item specified by the user
+  *6. remove (function) = removes the node that contains the item specified by the user
+  *7. removeNode (function) = removes the node that contains the item specified by the user after a remove function
 
   insert function is complex and requires explanation. The first step in the function is to create a Node object, passing in the data the node will store. The second step in insertion is to check the BST for a root node. If a root node doesn’t exist, then the BST is new and this node is the root node, which completes the function definition. Otherwise, the function moves to the next step. If the node being inserted is not the root node, then we have to prepare to traverse the BST to find the proper insertion point. This process is similar to traversing a linked list. The function uses a Node object that is assigned as the current node as the function moves from level to level in the BST. The function also has to position itself inside the BST at the root node. Once inside the BST, the next step is to determine where to put the node. This is performed inside a loop that breaks once the correct insertion point is determined. The algorithm for determining the corrent insertion point for a node is as follows:
     *1. Set the root node to be the current node.
@@ -100,6 +102,38 @@ class BST {
     }
     return current;
   }
+
+  remove(data) {
+    let root = removeNode(this.root, data);
+    return root;
+  }
+
+  removeNode(node, data) {
+    if (node === null) {
+      return null;
+    }
+    if (data === node.data) {
+      if (node.left === null && node.right === null) {
+        return null;
+      }
+      if (node.left === null) {
+        return node.right;
+      }
+      if (node.right === null) {
+        return node.left;
+      }
+      let tempNode = getMin(node.right);
+      node.data = tempNode.data;
+      node.right = removeNode(node.right, tempNode.data);
+      return node;
+    } else if (data < node.data) {
+      node.left = removeNode(node.left, data);
+      return node;
+    } else {
+      node.right = removeNode(node.right, data);
+      return node;
+    }
+  }
 }
 
 function inOrder(node) {
@@ -134,6 +168,3 @@ nums.insert(37);
 nums.insert(3);
 nums.insert(99);
 nums.insert(22);
-console.log("Inorder traversal: ");
-inOrder(nums.root);
-preOrder(nums.root);
