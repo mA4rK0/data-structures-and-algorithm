@@ -6,3 +6,18 @@ There are two methods to representing the edges of a graph :
 
 1. adjacency list,
 2. adjacency matrix
+
+There are two ways to use the search algorithm for traversing a graph data structure :
+
+1. Depth First Search
+2. Breadth First Search
+
+The difference between DFS and BFS :
+
+| Depth First Search                                     | Breadth First Search                               |
+| ------------------------------------------------------ | -------------------------------------------------- |
+| Traverse a graph branch by branch                      | Traverse a graph level by level                    |
+| Utilizes a stack                                       | Utilizes a queue                                   |
+| Better if destination is on average far from the start | Better if destination is on average close to start |
+| Children are visited before siblings                   | Siblings are visited before children               |
+| More popular for games / puzzles                       | ~                                                  |
