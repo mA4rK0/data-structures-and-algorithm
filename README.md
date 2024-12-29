@@ -24,7 +24,7 @@ This section contains all the codes and formulas used for various types of data 
 
 1. Sort Algorithm
 2. Search Algorithm
-   1. Depth First Search
+   1. [Depth First Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/depthFirstSearch)
 
 ## Collection
 
