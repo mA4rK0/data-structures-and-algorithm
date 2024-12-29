@@ -7,7 +7,7 @@
     *4. addEdge (function) = This function adds an edge between two vertices
     *5. showGraph (function) = This function shows the graph
     *6. marked (property) = stores visited vertices and initialize it to all false values.
-    
+    *7. bfs (function) = This function performs breadth first search
 */
 
 class Graph {
