@@ -8,6 +8,8 @@
     *5. showGraph (function) = This function shows the graph
     *6. marked (property) = stores visited vertices and initialize it to all false values.
     *7. bfs (function) = This function performs breadth first search
+    *8. edgeTo (property) = Keeps track of edges from one vertex to the next
+    *9. pathTo (function) = This function returns the path from one source to another vertex until it reaches the target
 */
 
 class Graph {
@@ -22,6 +24,7 @@ class Graph {
     for (let i = 0; i < this.vertices; ++i) {
       this.marked[i] = false;
     }
+    this.edgeTo = [];
   }
 
   addEdge(v, w) {
@@ -51,11 +54,28 @@ class Graph {
       }
       for (let w of this.adj[v]) {
         if (!this.marked[w]) {
+          this.edgeTo[w] = v;
           this.marked[w] = true;
           queue.push(w);
         }
       }
     }
+  }
+
+  hasPathTo(v) {
+    return this.marked[v];
+  }
+
+  pathTo(v, source = 0) {
+    if (!this.hasPathTo(v)) {
+      return undefined;
+    }
+    let path = [];
+    for (let i = v; i !== source; i = this.edgeTo[i]) {
+      path.push(i);
+    }
+    path.push(source);
+    return path.reverse();
   }
 }
 
@@ -66,3 +86,13 @@ g.addEdge(1, 3);
 g.addEdge(2, 4);
 g.showGraph();
 g.bfs(0);
+
+let target = 4;
+
+const path = g.pathTo(target);
+
+if (path) {
+  console.log(`Path from 0 to ${target}:`, path.join(" -> "));
+} else {
+  console.log(`No path found from 0 to ${target}`);
+}

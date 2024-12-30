@@ -20,4 +20,4 @@ The difference between DFS and BFS :
 | Utilizes a stack                                       | Utilizes a queue                                   |
 | Better if destination is on average far from the start | Better if destination is on average close to start |
 | Children are visited before siblings                   | Siblings are visited before children               |
-| More popular for games / puzzles                       | ~                                                  |
+| More popular for games / puzzles                       | Effective for finding the shortest paths           |
