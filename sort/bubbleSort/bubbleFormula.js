@@ -61,8 +61,10 @@ class CArray {
   }
 }
 
-let a = new CArray(10);
+let a = new CArray(1000);
 a.setData();
-console.log(a);
 console.log(a.toString());
+let start = new Date().getTime();
 a.bubbleSort();
+let stop = new Date().getTime();
+console.log("Execution time: " + (stop - start) + "ms");
