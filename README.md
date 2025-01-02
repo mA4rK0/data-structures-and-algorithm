@@ -22,14 +22,14 @@ This section contains all the codes and formulas used for various types of data 
 
 ## Algorithm
 
-1. Sort Algorithm
+1. **Sort Algorithm**
    1. [Topological Sorting](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/topologicalSorting)
    2. [Bubble Sort](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sort/bubbleSort)
    3. [Selection Sort](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sort/selectionSort)
    4. [Insertion Sort](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sort/insertionSort)
    5. [Shell Sort](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sort/shellSort)
    6. [Merge Sort](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/sort/mergeSort)
-2. Search Algorithm
+2. **Search Algorithm**
    1. [Depth First Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/depthFirstSearch)
    2. [Breadth First Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/breadthFirstSearch)
 
