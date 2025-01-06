@@ -34,7 +34,7 @@ This section contains all the codes and formulas used for various types of data 
    1. [Depth First Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/depthFirstSearch)
    2. [Breadth First Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/graph/breadthFirstSearch)
    3. [Linear Search](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/search/linearSearch)
-      1. [Pareto Distributions]()
+      1. [Pareto Distributions](https://github.com/mA4rK0/data-structures-and-algorithm/tree/main/search/linearSearch/paretoDistributions)
 
 ## Collection
 
